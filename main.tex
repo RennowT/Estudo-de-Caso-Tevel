@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{paper}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage[printonlyused]{acronym}
+\usepackage{microtype}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\usepackage{multirow}
+\usepackage{longtable}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5cm}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, calc}
+
+\usepackage{siunitx}
+
+\usepackage{import}
+
+\title{IoT na Agricultura: Colheita Autônoma com Robôss Voadores da Tevel}
+\author{Matheus Renó Torres}
+\date{}
+
+\begin{document}
+\maketitle
+
+% \begin{abstract}
+
+% \end{abstract}
+
+%\textbf{Palavras-chave:} 
+
+\input{acronimos}
+
+\input{sections/01_INTRODUCAO}
+\input{sections/02_PROBLEMA_OBJETIVO}
+\input{sections/03_PRODUTO}
+\input{sections/04_ARQUITETURA}
+\input{sections/05_COMPUTACAO}
+\input{sections/06_IMPLANTACAO_RESULTADOS}
+\input{sections/07_BENEFICIOS_LIMITACOES}
+\input{sections/08_CONCLUSAO}
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}

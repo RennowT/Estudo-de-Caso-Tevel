@@ -1,0 +1,47 @@
+\section{Computação}
+
+A documentação pública identifica componentes de software, mas não detalha toda a eletrônica. A apresentação conjunta de 2023 descreve a evolução de instalações manuais e acesso remoto por scripts para serviços em contêineres e Kubernetes~\cite{oliveira2023tevel}. A Tabela~\ref{tab:tecnologias_documentadas} reúne registros de diferentes momentos e contextos.
+
+\begin{table*}[!htb]
+    \centering
+    \caption{Tecnologias documentadas, funções e limites da evidência.}
+    \label{tab:tecnologias_documentadas}
+    \small
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.10}
+
+    \begin{tabularx}{\textwidth}{@{}
+        >{\raggedright\arraybackslash}p{0.27\textwidth}
+        >{\raggedright\arraybackslash}p{0.35\textwidth}
+        >{\raggedright\arraybackslash}X
+        @{}}
+        \hline
+        \textbf{Tecnologia e fonte} &
+        \textbf{Função} &
+        \textbf{Limite} \\
+        \hline
+
+        GPU na estação terrestre~\cite{reeuwijk2025} &
+        Processamento de visão computacional. &
+        Modelo, quantidade e consumo não informados. \\
+        \hline
+
+        K3s, Flux e NVIDIA Operator~\cite{oliveira2023tevel} &
+        Orquestração, sincronização de aplicações e suporte à GPU. &
+        Controlador de voo não identificado. \\
+        \hline
+
+        Palette e Kairos~\cite{oliveira2023tevel} &
+        Gestão e atualizações com particionamento A/B. &
+        Confiabilidade da missão não demonstrada. \\
+        \hline
+
+        TPM e criptografia~\cite{oliveira2023tevel} &
+        Proteção de dados persistentes. &
+        Segurança integral não demonstrada. \\
+        \hline
+
+    \end{tabularx}
+\end{table*}
+
+A presença de Kubernetes não comprova a execução das malhas de estabilização nesse ambiente. As fontes analisadas não especificam o modelo do controlador de voo, as taxas das malhas, o escalonamento ou o isolamento entre controle e missão. Na análise de \acp{VANT}, interromper um serviço de gestão não equivale, por si só, a perder a autoridade sobre os atuadores.
